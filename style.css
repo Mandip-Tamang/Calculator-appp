@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+}
+.calc{
+    height: 98dvh;
+    width: 80dvh;
+    border:3px solid green ;
+    border-radius: 10px;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+    .display-area{
+        height: 190px;
+        border: 8px solid rgb(23, 160, 181);
+        margin: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: end;
+        font-size: 3rem;
+        border-radius: 10px;
+        background-color: rgb(142, 255, 4);
+    }
+.btn-area{
+    height: 75%;
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-content: center;
+    gap: 10px;
+    background-color:black ;
+}
+.btn{
+    height: 90px;
+    width: 90px;
+    border-radius:50%;
+    border: none;
+    font-size: 3em;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: rgba(251, 242, 242, 0.2);
+    color: white;
+}
+.zero{
+    grid-column: 1/3;
+    color: white;
+    width: 250px;
+    border-radius: 20px;
+    padding-left: 15px;
+    display: flex;
+    justify-content:  flex-start;
+    align-items:center;
+    border: none;
+    font-size: 3em;
+    cursor: pointer;
+    margin: 0 auto;
+    background-color: rgba(251, 242, 242, 0.2);
+}
+.top{
+    background-color: rgb(232, 232, 232);
+    color: rgb(71, 70, 70);
+}
+#operator{
+    background-color: rgb(237, 164, 28);
+    color:white;
+}
